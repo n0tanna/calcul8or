@@ -11,6 +11,7 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.wb.swt.SWTResourceManager;
+import java.text.DecimalFormat;
 
 public class Calc
 {
@@ -82,7 +83,7 @@ public class Calc
 		//row 2 content
 		Button clearButton = new Button(shell, SWT.NONE);
 		clearButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		clearButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		clearButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		GridData gd_clearButton = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 1);
 		gd_clearButton.widthHint = 47;
 		clearButton.setLayoutData(gd_clearButton);
@@ -98,7 +99,7 @@ public class Calc
 		
 		Button delete = new Button(shell, SWT.NONE);
 		delete.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		delete.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		delete.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		delete.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -121,7 +122,7 @@ public class Calc
 		delete.setText("<-");
 		
 		Button unary = new Button(shell, SWT.NONE);
-		unary.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		unary.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		unary.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		unary.addMouseListener(new MouseAdapter()
 		{
@@ -140,7 +141,7 @@ public class Calc
 		
 		//row 3 content
 		Button additionButton = new Button(shell, SWT.NONE);
-		additionButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		additionButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		additionButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		additionButton.addMouseListener(new MouseAdapter() 
 		{
@@ -160,7 +161,7 @@ public class Calc
 		
 		Button number1 = new Button(shell, SWT.NONE);
 		number1.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number1.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number1.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number1.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -177,7 +178,7 @@ public class Calc
 		
 		Button number2 = new Button(shell, SWT.NONE);
 		number2.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number2.setFont(SWTResourceManager.getFont("Dubai", 9, SWT.NORMAL));
+		number2.setFont(SWTResourceManager.getFont("Dubai", 9, SWT.BOLD));
 		number2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseDown(MouseEvent e) 
@@ -193,7 +194,7 @@ public class Calc
 		
 		//row 4 content
 		Button subtractionButton = new Button(shell, SWT.NONE);
-		subtractionButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		subtractionButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		subtractionButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		subtractionButton.addMouseListener(new MouseAdapter() 
 		{
@@ -212,7 +213,7 @@ public class Calc
 		subtractionButton.setText("-");
 		
 		Button number3 = new Button(shell, SWT.NONE);
-		number3.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number3.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number3.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		number3.addMouseListener(new MouseAdapter() 
 		{
@@ -230,7 +231,7 @@ public class Calc
 		
 		Button number4 = new Button(shell, SWT.NONE);
 		number4.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number4.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number4.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number4.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -248,7 +249,7 @@ public class Calc
 		//row 5 content
 		Button divisionButton = new Button(shell, SWT.NONE);
 		divisionButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		divisionButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		divisionButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		divisionButton.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -267,7 +268,7 @@ public class Calc
 		
 		Button number5 = new Button(shell, SWT.NONE);
 		number5.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number5.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number5.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number5.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -283,7 +284,7 @@ public class Calc
 		number5.setText("5");
 		
 		Button number6 = new Button(shell, SWT.NONE);
-		number6.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number6.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number6.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		number6.addMouseListener(new MouseAdapter() 
 		{
@@ -302,7 +303,7 @@ public class Calc
 		//row 6 content
 		Button multipicationButton = new Button(shell, SWT.NONE);
 		multipicationButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		multipicationButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		multipicationButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		multipicationButton.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -321,7 +322,7 @@ public class Calc
 		
 		Button number7 = new Button(shell, SWT.NONE);
 		number7.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number7.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number7.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number7.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -338,7 +339,7 @@ public class Calc
 		
 		Button number8 = new Button(shell, SWT.NONE);
 		number8.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number8.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number8.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number8.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -356,7 +357,7 @@ public class Calc
 		//row 7 content
 		Button modulusButton = new Button(shell, SWT.NONE);
 		modulusButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		modulusButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		modulusButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		modulusButton.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -375,7 +376,7 @@ public class Calc
 		
 		Button number9 = new Button(shell, SWT.NONE);
 		number9.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		number9.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number9.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number9.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -391,7 +392,7 @@ public class Calc
 		number9.setText("9");
 		
 		Button number0 = new Button(shell, SWT.NONE);
-		number0.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		number0.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		number0.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		number0.addMouseListener(new MouseAdapter() 
 		{
@@ -409,7 +410,7 @@ public class Calc
 		
 		Button decimal = new Button(shell, SWT.NONE);
 		decimal.setForeground(SWTResourceManager.getColor(119, 136, 153));
-		decimal.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		decimal.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.BOLD));
 		decimal.addMouseListener(new MouseAdapter() 
 		{
 			@Override
@@ -427,7 +428,7 @@ public class Calc
 		
 		//row 8 content
 		Button equalsButton = new Button(shell, SWT.NONE);
-		equalsButton.setFont(SWTResourceManager.getFont("Dubai Light", 9, SWT.NORMAL));
+		equalsButton.setFont(SWTResourceManager.getFont("Dubai Light", 11, SWT.BOLD));
 		equalsButton.setForeground(SWTResourceManager.getColor(119, 136, 153));
 		equalsButton.addMouseListener(new MouseAdapter() 
 		{
