@@ -65,6 +65,7 @@ public class Calc
 	protected void createContents()
 	{
 		shell = new Shell();
+		shell.setImage(SWTResourceManager.getImage("C:\\Users\\Anna\\Documents\\calcul8tor.png"));
 		shell.setBackground(SWTResourceManager.getColor(119, 136, 153));
 		shell.setSize(266, 414);
 		shell.setText("Calcul8or");
