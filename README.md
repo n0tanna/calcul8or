@@ -1,7 +1,7 @@
 # calcul8or
 A basic calculator for basic needs.
 
-Version #1 released 2019-02-09
+Version 1 released 2019-02-09
 Implimented:
 Addition
 Subtraction
@@ -11,9 +11,13 @@ Modulus
 Supports decimal places
 Supports switching from -/+
 
-Version #1.2 released 2019-02-10
+Version 1.2 released 2019-02-10
 Implimented:
 Image added for calculator logo
+
+Version 1.3
+Implimented:
+Shortened code with the imports
 
 Things to add:
 Cutting off extra 0's
