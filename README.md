@@ -23,3 +23,9 @@ Things to add:
 Cutting off extra 0's
 Exponents
 SquareRoots
+
+Calcul8or-CLI
+No GUI
+Version 0
+Implimented:
+Nothing, basically just uploaded the skeleton of the program
