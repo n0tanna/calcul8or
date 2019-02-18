@@ -3,6 +3,12 @@ import java.util.Scanner;
 public class Calcul8or_CLI {
 
     static int answer;
+<<<<<<< HEAD
+=======
+    static double num1;
+    static double num2;
+    static double calculation;
+>>>>>>> Calul8or CLI update.
 
     public static void main(String[] args)
     {
@@ -41,6 +47,7 @@ public class Calcul8or_CLI {
                 decisions();
         }
     }
+<<<<<<< HEAD
     public static void addition()
     {
 
@@ -64,5 +71,64 @@ public class Calcul8or_CLI {
     public static void squareroot()
     {
 
+=======
+    public static void numbers()
+    {
+        Scanner myInput = new Scanner(System.in);
+
+        System.out.println("What is your first number?");
+        num1 = myInput.nextDouble();
+
+        System.out.println("What is your second number?");
+        num2 = myInput.nextDouble();
+
+    }
+    public static void numbersSqrt()
+    {
+        Scanner myInput = new Scanner(System.in);
+
+        System.out.println("What number would you like to sqrt?");
+        num1 = myInput.nextDouble();
+    }
+    public static void answerCalc()
+    {
+        System.out.println("The answer of your calculation is: " + calculation);
+    }
+    public static void addition()
+    {
+        numbers();
+        calculation = num1 + num2;
+        answerCalc();
+    }
+    public static void subtraction()
+    {
+        numbers();
+        calculation = num1 - num2;
+        answerCalc();
+    }
+    public static void multipication()
+    {
+        numbers();
+        calculation = num1 * num2;
+        answerCalc();
+    }
+    public static void division()
+    {
+        numbers();
+        calculation = num1 / num2;
+        answerCalc();
+    }
+    public static void exponent()
+    {
+        numbers();
+        calculation = Math.pow(num1, num2);
+        answerCalc();
+    }
+    public static void squareroot()
+    {
+        numbersSqrt();
+        calculation = Math.sqrt(num1);
+        answerCalc();
+>>>>>>> Calul8or CLI update.
     }
 }
