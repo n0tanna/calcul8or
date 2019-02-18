@@ -29,3 +29,6 @@ No GUI
 Version 0
 Implimented:
 Nothing, basically just uploaded the skeleton of the program
+Version 1
+Implimented:
+Addition, Subractraction, Multipication, Division, Sqrt, Exponent
