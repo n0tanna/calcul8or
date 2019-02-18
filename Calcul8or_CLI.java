@@ -3,12 +3,9 @@ import java.util.Scanner;
 public class Calcul8or_CLI {
 
     static int answer;
-<<<<<<< HEAD
-=======
     static double num1;
     static double num2;
     static double calculation;
->>>>>>> Calul8or CLI update.
 
     public static void main(String[] args)
     {
@@ -47,31 +44,6 @@ public class Calcul8or_CLI {
                 decisions();
         }
     }
-<<<<<<< HEAD
-    public static void addition()
-    {
-
-    }
-    public static void subtraction()
-    {
-
-    }
-    public static void multipication()
-    {
-
-    }
-    public static void division()
-    {
-
-    }
-    public static void exponent()
-    {
-
-    }
-    public static void squareroot()
-    {
-
-=======
     public static void numbers()
     {
         Scanner myInput = new Scanner(System.in);
@@ -129,6 +101,5 @@ public class Calcul8or_CLI {
         numbersSqrt();
         calculation = Math.sqrt(num1);
         answerCalc();
->>>>>>> Calul8or CLI update.
     }
 }
