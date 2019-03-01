@@ -26,6 +26,7 @@ Things to add:
 Cutting off extra 0's
 Exponents
 SquareRoots
+Change GUI 
 
 Calcul8or-CLI
 
